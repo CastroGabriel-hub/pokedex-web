@@ -18,13 +18,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
 
-    <link rel="stylesheet" href="style.css">
 
-    <style>
-        body {
-            padding-right: 0;
-        }
-    </style>
 
 
 </head>
@@ -32,11 +26,11 @@
     
     <!--Cabeçalho-->
     <header>
-        <nav class="navbar navbar-expand-md text-dark bg-primary">
+        <nav class="navbar navbar-expand-md text-dark bg-danger">
               
             <div class="container">
                 
-                <a class="navbar-brand text-light" href="#"><i class="bi bi-arrow-through-heart-fill"></i></a>
+                <a class="navbar-brand text-light" href="#"><i class="bi bi-code-slash"></i></i></a>
                 
                 <button class="navbar-toggler d-lg-none" type="button">
                     <span class="navbar-toggler-icon"></span>
@@ -46,14 +40,14 @@
                     <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                         
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Início</a>
+                            <a class="nav-link text-light" href="#">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre nós</a>
+                            <a class="nav-link text-light" href="#">Meus pokemons</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
+                            <a class="nav-link text-light" href="#">Configurações</a>
                         </li>
   
                     </ul>
@@ -71,10 +65,10 @@
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <img src="https://dummyimage.com/1200x250/383838/ffffff.png&text=Pokebanner" class="img-fluid w-100" alt="First slide">
+                    <img src="https://dummyimage.com/1200x250/383838/ffffff.png&text=Pokedex" class="img-fluid w-100" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img src="https://dummyimage.com/1200x250/383838/ffffff.png&text=Pokebanner" class="img-fluid w-100" alt="Second slide">
+                    <img src="https://dummyimage.com/1200x250/383838/ffffff.png&text=Pokedex" class="img-fluid w-100" alt="Second slide">
                 </div>
 
             </div>
@@ -100,8 +94,12 @@
                         <img src="<?=$poke["imagem"]?>" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"> <?=$poke["nome"]?> </h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <p class="card-text"> 
+                                Tipo: <?=$poke["tipo"] ?><br>
+                                Altura: <?=$poke["altura"] ?><br>
+                                Peso: <?=$poke["peso"] ?>
+                            </p>
+                            <a href="#" class="btn btn-primary">Mais informações</a>
                         </div>
                     </div>
                 </div>

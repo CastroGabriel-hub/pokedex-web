@@ -1,5 +1,6 @@
 <?php
-    $pokejson = file_get_contents("https://jsonkeeper.com/b/Q5XS");
+    //Json original https://jsonkeeper.com/b/Q5XS
+    $pokejson = file_get_contents("pokes.json");
     $pokemons = json_decode($pokejson, true);
     // print_r($pokemons);
     // die;
